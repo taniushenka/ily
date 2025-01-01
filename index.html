@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>&#9825; Єгорка + Танюша &#9825;</title>
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <div class="timer">
+
+    <div id="timer"></div>
+
+    <script>
+        // Встановлюємо початкову дату
+        const startDate = new Date("2023-07-02T01:00:00"); // Формат YYYY-MM-DDTHH:MM:SS
+
+        // Оновлюємо таймер кожну секунду
+        setInterval(() => {
+            // Поточний час
+            const currentTime = new Date();
+            
+            // Різниця у часі в мілісекундах
+            const elapsedTime = currentTime - startDate;
+
+            // Перетворюємо час у дні, години, хвилини і секунди
+            const days = Math.floor(elapsedTime / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((elapsedTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((elapsedTime % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((elapsedTime % (1000 * 60)) / 1000);
+
+            // Оновлюємо відображення таймера
+            document.getElementById('timer').innerText = 
+                `Ми разом:
+
+                 ${days} днів, ${hours} годин, ${minutes} хвилин, ${seconds} секунд`;
+        }, 1000);
+    </script>
+    </div>
+
+
+    
+    <div class="bg">
+    </div>
+
+    <div class="content">
+
+
+        <a id="other"></a>
+
+
+        <div class="choose">
+            <p>Обери місяць:</p>
+        </div>
+
+        <div class="month">
+
+            <div class="first">
+                <div class="june2023">
+                    <a href="june2023.html" alt="june"  style="color: rgb(2, 14, 52)">Червень 2023</a>
+                </div>
+
+                <div class="july2023">
+                    <a href="july2023.html" alt="july2023" style="color: rgb(2, 14, 52)">Липень 2023</a>
+                </div>
+
+                <div class="august2023">
+                    <a href="august2023.html" alt="august2023" style="color: rgb(2, 14, 52)">Серпень 2023</a>
+                </div>
+            </div>
+
+
+
+            <div class="second">
+                <div class="september2023">
+                    <a href="september2023.html" alt="september2023" style="color: rgb(2, 14, 52)">Вересень 2023</a>
+                </div>
+    
+                <div class="october2023">
+                    <a href="october2023.html" alt="october2023" style="color:rgb(2, 14, 52)">Жовтень 2023</a>
+                </div>
+    
+            </div>
+
+
+
+            <div class="third">
+                <div class="nov_jul">
+                    <a href="nov_jul.html" alt="nov_jul" style="color:rgb(2, 14, 52)">Листопад 2023 - Липень 2024</a>
+                </div>
+            </div>
+
+
+
+            <div class="fourth">
+                <div class="august">
+                    <a href="august.html" alt="august" style="color: rgb(2, 14, 52)">Серпень</a>
+                </div>
+    
+                <div class="september">
+                    <a href="september.html" alt="september" style="color: rgb(2, 14, 52)"">Вересень</a>
+                </div>
+            </div>
+
+
+
+            <div class="fiveth">
+                <div class="october">
+                    <a href="october.html" alt="october" style="color: rgb(2, 14, 52)">Жовтень</a>
+                </div>
+    
+                <div class="november">
+                    <a href="november.html" alt="november" style="color: rgb(2, 14, 52)">Листопад</a>
+                </div>
+    
+                <div class="december">
+                    <a href="december.html" alt="december" style="color: rgb(2, 14, 52)">Грудень</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="surprise">
+            <a href="surprise.html" alt="surprise" style="color: rgb(255, 210, 235);">???</a>
+        </div>
+    </div>
+
+    
+    <a id="next"></a>
+
+    <div class="content2">
+        <div class="next">
+            <a href="ily.html">Далі буде... &#9825;</a>
+        </div>
+    </div>
+</body>
+</html>
